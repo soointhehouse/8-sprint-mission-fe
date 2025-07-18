@@ -1,3 +1,22 @@
+  :root{
+  --color1: #111827;
+  --color2: #1251aa;
+  --color3: #1967d6;
+  --color4: #3692ff;
+  --color5: #374151;
+  --color6: #9ca3af;
+  --color7: #dfdfdf;
+  --color8: #e5e7eb;
+  --color9: #ffffff;
+  --color10: #cfe5ff;
+  --color11: #1f2937;
+  --color12: #F3F4F6;
+  --color13: #e6f2ff;
+  --color14: #f3f4f6;
+  --color15: #f9f9f9;
+  --color16: #F9FAFB;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +26,8 @@
 body {
   font-family: Pretendard;
   line-height: 1.6;
-  background-color:#fff;
-  color: #222;
+  background-color: var(--color9);
+  color: var(--color5);
 }
 
 a {
@@ -35,8 +54,8 @@ a {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: white;
-  border-bottom: 1px solid #DFDFDF;
+  background-color: var(--color9);
+  border-bottom: 1px solid var(--color7);
   z-index: 1;
 }
 
@@ -44,7 +63,7 @@ a {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  height: 70%;
+  height: 70px;
   padding: 0 400px;
   display: flex;
   justify-content: space-between;
@@ -67,7 +86,7 @@ a {
 }
 
 .logo span {
-  color: #3692FF;
+  color: var(--color4);
   font-family: "ROKAF Sans";
   font-size: 25.633px;
   font-style: normal;
@@ -85,9 +104,9 @@ a {
   width: 128px;
   height: 48px;
   padding: 12px 23px;
-  background-color: #3692FF;
+  background-color: var(--color4);
   border-radius: 8px;
-  color: #F3F4F6;
+  color: var(--color12);
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -97,7 +116,7 @@ a {
 }
 
 .hero {
-  background-color: #CFE5FF;
+  background-color: var(--color10);
   width: 100%;
   height: 540px;
 }
@@ -114,7 +133,7 @@ a {
 }
 
 .hero-text h2 {
-  color: var(--Secondary-700, #374151);
+  color: var(--color5);
   font-family: Pretendard;
   font-size: 40px;
   font-style: normal;
@@ -124,7 +143,7 @@ a {
   gap:32px;
   align-items: flex-start;
   margin-top: 240px;
-  margin-bottom: px;
+  margin-bottom: 0px;
 }
 
 
@@ -142,8 +161,8 @@ a {
 
 .cta-btn {
   display: inline-block;
-  background-color: #3692FF;
-  color: white;
+  background-color: var(--color4);
+  color: var(--color16);
   padding: 16px 124px;
   font-size: 20px;
   border-radius: 40px;
@@ -153,7 +172,7 @@ a {
 }
 
 .cta-btn:hover {
-  background-color: #1366d6;
+  background-color: var(--color4);
 }
 
 
@@ -162,7 +181,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FCFCFC; /* ✅ 배경색 지정 */
+  background: (--color9); 
   border-radius: 16px;
   padding: 0px auto;
   margin-bottom: 276px;
@@ -174,8 +193,8 @@ a {
 }
 
 .card-section {
-  background-color: #ffffff; /* 전체 배경은 흰색 */
-  padding: 100px 0;
+  background-color: (--color9); 
+  padding: 138px 0;
 }
 
 .card img {
@@ -191,7 +210,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FCFCFC; 
+  background: var(--color9); 
   border-radius: 16px;
   padding: 0px auto;
   margin-bottom: 276px;
@@ -208,14 +227,14 @@ a {
 }
 
 .card-type2 .label {
-  color: #3692FF;
+  color: var(--color4);
   font-weight: 700;
   margin-bottom: 12px;
 
 }
 
 .card-text {
-  color: var(--Secondary-700, #374151);
+  color: var(--color5);
   font-family: Pretendard;
   text-align: left;
   gap: 24px;
@@ -226,10 +245,10 @@ a {
 }
 
 .card .desc {
-  font-size: 24px;       /* ✅ 텍스트 크기 */
-  line-height: 32px;     /* ✅ 줄 간격 */
-  color: #374151;           /* ✅ 색상 */
-  font-weight: 500;      /* ✅ 글씨 두께 (기본값: normal 또는 400) */
+  font-size: 24px;       
+  line-height: 32px;     
+  color: var(--color5);          
+  font-weight: 500;      
 }
 
 .card .label {
@@ -239,12 +258,12 @@ a {
   font-weight: 700;
   margin-bottom: 12px;
   line-height: 26px;
-  color: #3692FF;
+  color: var(--color4);
   
 }
 
 .card h3 {
-  color: var(--Secondary-700, #374151);
+  color: var(--color5);
   font-family: Pretendard;
   font-size: 24x;
   font-weight: 700;
@@ -259,7 +278,7 @@ a {
 }
 
 .review-section {
-  background-color: #CFE5FF;
+  background-color: var(--color10);
   height:540px;
   padding: 100px 0;
   text-align: center;
@@ -280,7 +299,7 @@ a {
   font-size: 40px;
   font-weight: 700;
   line-height: 140%;
-  color: #374151;
+  color: var(--color5);
   margin-top: 172.5px;
   gap: 69px;
   text-align: left;
@@ -303,53 +322,53 @@ a {
 }
 
 .footer {
-  background-color: #111827;
+  display: flex;
+  background-color: var(--color1);
   padding: 32px 200px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--color7);
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
   width: 100%;
   height: 160px;
   gap: 10px;
-  margin-top: auto;
-
   
 }
 
 .footer-inner {
-  max-width: 1920px;
-  padding: 32px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  align-self: stretch;
 }
 
 .footer-left {
   font-size: 16px;
-  color: #9CA3AF;
+  color: var(--color6);
 }
 
-.footer-center a {
-  margin: 0 16px;
+.footer-center  {
+  display: flex;
+  align-items: center;
+  gap: 30px;
   font-size: 16px;
-  color: #E5E7EB;
+  color: var(--color8);
 }
 
-.footer-right a {
-  margin-left: 0 16px;
+
+.footer-right  {
+  display: flex;
+  gap: 16px;
+  align-items: center;
   cursor: pointer;
 }
 
 .footer-right img {
   width: 20px;
   height: 20px;
+  padding: 0.853px 1px 1.147px 1px;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-:root {
-  --main-blue: #3692FF;
-  --gray: #ccc;
-  --text-dark: #333;
-}

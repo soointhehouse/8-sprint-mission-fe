@@ -1,4 +1,4 @@
-/* 전체 초기화 및 기본 설정 */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +7,27 @@
 
 body {
   font-family: Pretendard, 'ROKAF Sans', sans-serif;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--color9);
+  color: var(--color12);
 }
 
-/* 공통 a 스타일 */
+
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 
-/* ------------------------------- */
-/* 로고 영역 */
+
+
 .logo {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 60px; /* 로그인/회원가입 공통 상단 여백 */
+  margin-top: 60px; 
 }
 
-/* 로그인 메인 컨테이너 */
+
 .login-container {
   width: 1920px;
   margin: 100px auto;
@@ -38,7 +38,7 @@ a {
   margin-bottom: 40px;
 }
 
-/* 로고 + 텍스트 묶음 */
+
 .login-logo {
   display: flex;
   align-items: center;
@@ -53,15 +53,14 @@ a {
 }
 
 .login-logo h1 {
-  color: #3692FF;
+  color: var(--color4);
   font-family: "ROKAF Sans";
   font-size: 66.344px;
   font-weight: 700;
   line-height: normal;
 }
 
-/* ------------------------------- */
-/* 입력 폼 */
+
 .login-form {
   width: 640px;
   display: flex;
@@ -73,7 +72,7 @@ a {
 .login-form label {
   font-size: 18px;
   font-weight: 700;
-  color: #1F2937;
+  color: var(--color11);
   margin-bottom: 4px;
 }
 
@@ -84,21 +83,21 @@ a {
   font-size: 16px;
   border: 1px solid transparent;
   border-radius: 12px;
-  background-color: #F3F4F6;
+  background-color: var(--color12);
   outline: none;
   transition: border 0.2s;
 }
 
-/* ✅ 포커스 시 */
+
 .login-form input:focus {
-  border: 1px solid #3692FF;
+  border: 1px solid var(--color4);
 }
 
-/* 로그인 버튼 */
+
 .login-submit {
   margin-top: 16px;
-  background-color: #9CA3AF;
-  color: #F3F4F6;
+  background-color: var(--color6);
+  color: var(--color12);
   font-weight: 700;
   border: none;
   padding: 12px;
@@ -107,13 +106,11 @@ a {
   border-radius: 40px;
 }
 
-/* ------------------------------- */
-/* SNS 로그인 */
-
 .social-login {
   width: 640px;
   padding: 16px 24px;
-  background-color: #E6F2FF; 
+  background-color: var(--color13); 
+  color: var(--color11);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -122,10 +119,12 @@ a {
 }
 
 .social-login-box p {
-  font-size: 14px;
-  color: #1F2937;
+  font-size: 16px;
+  color: var(--color11);
   font-weight: 500;
   margin: 0;
+  font-weight: 500;
+  line-height: 26px;
 }
 
 .social-icons {
@@ -139,15 +138,15 @@ a {
   cursor: pointer;
 }
 
-/* 회원가입 안내 */
+
 .signup-link {
   gap: 24px;
   font-size: 14px;
-  color: #1F2937;
+  color: var(--color11);
 }
 
 .signup-link a {
-  color: #3692FF;
+  color: var(--color4);
   text-decoration: underline;
   margin-left: 4px;
 }
