@@ -102,7 +102,7 @@ a {
 
 .social-login-box p {
   font-size: 14px;
-  background-color: #1F2937;
+  color: #1F2937;
   font-weight: 500;
   margin: 0;
 }
@@ -120,6 +120,7 @@ a {
 
 /* 회원가입 안내 */
 .signup-link {
+  gap:24px;
   margin-top: 32px;
   font-size: 14px;
   color: #6B7280;
