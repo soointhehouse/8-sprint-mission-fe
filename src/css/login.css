@@ -1,0 +1,153 @@
+/* 전체 초기화 및 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, 'ROKAF Sans', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* 공통 a 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* 로고 영역 */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 60px; /* 로그인/회원가입 공통 상단 여백 */
+}
+
+/* 로그인 메인 컨테이너 */
+.login-container {
+  width: 1920px;
+  margin: 100px auto;
+  padding: 231px 640px 284px 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* 로고 + 텍스트 묶음 */
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.login-logo img {
+  width: 103.529px;
+  height: 103.88px;
+  flex-shrink: 0;
+}
+
+.login-logo h1 {
+  color: #3692FF;
+  font-family: "ROKAF Sans";
+  font-size: 66.344px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* ------------------------------- */
+/* 입력 폼 */
+.login-form {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+     
+}
+
+.login-form label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 4px;
+}
+
+.login-form input {
+  width: 640px;
+  height: 56px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: #F3F4F6;
+  outline: none;
+  transition: border 0.2s;
+}
+
+/* ✅ 포커스 시 */
+.login-form input:focus {
+  border: 1px solid #3692FF;
+}
+
+/* 로그인 버튼 */
+.login-submit {
+  margin-top: 16px;
+  background-color: #9CA3AF;
+  color: #F3F4F6;
+  font-weight: 700;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 40px;
+}
+
+/* ------------------------------- */
+/* SNS 로그인 */
+
+.social-login {
+  width: 640px;
+  padding: 16px 24px;
+  background-color: #E6F2FF; 
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin: 32px 0;
+}
+
+.social-login-box p {
+  font-size: 14px;
+  color: #1F2937;
+  font-weight: 500;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+/* 회원가입 안내 */
+.signup-link {
+  gap: 24px;
+  font-size: 14px;
+  color: #1F2937;
+}
+
+.signup-link a {
+  color: #3692FF;
+  text-decoration: underline;
+  margin-left: 4px;
+}
