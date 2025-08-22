@@ -1,0 +1,47 @@
+.ss { position: relative; display: inline-block; }
+
+/* 버튼 */
+.ss__button{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  min-width: 160px;
+  padding: 0 44px 0 16px;         /* 오른쪽 아이콘 자리 */
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  background: #fff;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+}
+.ss__button:hover { background:#f9fafb; }
+.ss__button:focus { outline:none; box-shadow:0 0 0 3px rgba(54,146,255,.18); }
+.ss__label{ flex:1; text-align:center; pointer-events:none; }
+.ss__chev{
+  position:absolute; right:12px; top:50%; transform:translateY(-50%);
+  width:18px; height:18px; object-fit:contain; transition:transform .2s;
+}
+.ss__button.is-open .ss__chev{ transform:translateY(-50%) rotate(180deg); }
+
+/* 메뉴(버튼과 동일 폭, 가운데 정렬) */
+.ss__menu{
+  position:absolute; top:calc(100% + 8px); left:0; width:100%;
+  background:#fff; border:1px solid #E5E7EB; border-radius:16px;
+  box-shadow:0 10px 24px rgba(15,23,42,0.08);
+  padding:0; margin:0; list-style:none; overflow:hidden; z-index:20;
+}
+.ss__menu li::marker{ content:""; }
+
+/* 항목 */
+.ss__option{
+  height:48px; display:flex; align-items:center; justify-content:center;
+  padding:0 16px; font-size:16px; color:#111827; cursor:pointer; white-space:nowrap;
+  background:#fff; border-top:1px solid #E5E7EB;
+}
+.ss__option:first-child{ border-top:0; }
+.ss__option:hover{ background:#F3F4F6; }
+.ss__option.is-selected{ font-weight:600; background:#fff; }
